@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="styles.css" />
+  <title>Projeto 2</title>
+  <script type="module" src="./app.js"></script>
+</head>
+
+<body>
+  <!-- <canvas id="gl-canvas" width="128" height="128"> Oops! Something went wrong! </canvas> -->
+  <div id="top-grid">
+    <div id="view"> <canvas id="gl-canvas"></canvas> </div>
+
+    <div id="interface">
+      <br><br><br><br>
+      <div id="transform_container">
+        <hr>
+        <hr>
+        <hr>
+        <div class="container">
+          <h1>Medidas da piscina</h1>
+          <form id="calculatorForm">
+            <label for="comprimento">Comprimento:</label>
+            <input type="number" id="comprimento" step="0.5" value="6" required>
+
+            <label for="largura">Largura:</label>
+            <input type="number" id="largura" step="0.5" value="3" required>
+
+            <label for="maxProfundidade">Profundidade Máxima:</label>
+            <input type="number" id="maxProfundidade" step="0.1" value="1.7" required>
+
+            <label for="minProfundidade">Profundidade Mínima:</label>
+            <input type="number" id="minProfundidade" step="0.1" value="1.0" required>
+
+            <label for="lengthMaxProf">Comprimento da parte mais funda:</label>
+            <input type="number" id="lengthMaxProf" step="0.5" value="1.5" required>
+
+            <label for="lengthMinProf">Comprimento da parte menos funda:</label>
+            <input type="number" id="lengthMinProf" step="0.5" value="1.5" required>
+
+            <button type="button" id="calcularButton"> Calcular Inclinação </button>
+          </form>
+          <h2 id="resultado"></h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
